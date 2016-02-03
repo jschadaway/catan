@@ -25,12 +25,12 @@ class Player:
         s = "Name: " + self.name + \
             "\nColor: " + self.color +\
             "\nCurrent resources:\n"
-        res = "Number of Bricks: " + str(self.resources['Bricks'])
-        res += "Number of Ore: " + str(self.resources['Ore'])
-        res += "Number of Sheep: " + str(self.resources['Sheep'])
-        res += "Number of Wheat: " + str(self.resources['Wheat'])
-        res += "Number of Wood: " + str(self.resources['Wood'])
-        return s
+        res = "Number of Bricks: " + str(self.resources['Bricks']) + "\n"
+        res += "Number of Ore: " + str(self.resources['Ore']) + "\n"
+        res += "Number of Sheep: " + str(self.resources['Sheep']) + "\n"
+        res += "Number of Wheat: " + str(self.resources['Wheat']) + "\n"
+        res += "Number of Wood: " + str(self.resources['Wood']) + "\n"
+        return s + res
 
     def add_resource(self, resource):
         self.resources[resource] += 1
