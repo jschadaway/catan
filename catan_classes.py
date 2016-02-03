@@ -34,45 +34,6 @@ class Player:
 
     def add_resource(self, resource):
         self.resources[resource] += 1
-        
-##    
-##    def add_brick(self):
-##        self.resources[0] += 1
-##
-##    def add_ore(self):
-##        self.resources[1] += 1
-##
-##    def add_sheep(self):
-##        self.resources[2] += 1
-##
-##    def add_wheat(self):
-##        self.resources[3] += 1
-##
-##    def add_wood(self):
-##        self.resources[4] += 1
-##
-##    def subtract_brick(self):
-##        self.resources[0] -= 1
-##
-##    def subtract_ore(self):
-##        self.resources[1] -= 1
-##
-##    def subtract_sheep(self):
-##        self.resources[2] -= 1
-##
-##    def subtract_wheat(self):
-##        self.resources[3] -= 1
-##
-##    def subtract_wood(self):
-##        self.resources[4] -= 1
 
-
-
-
-
-
-
-
-
-
-        
+    def subtract_resource(self, resource):
+        self.resources[resource] -= 1
