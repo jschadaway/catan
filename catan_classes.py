@@ -12,5 +12,8 @@ class Player():
         # order: brick, ore, sheep, wheat, wood
         resources = [0, 0, 0, 0, 0]
         # dev_cards = [TBD]
-
-        
+    def __repr__(self):
+        s = "Name: " + name + \
+            "\nColor: " + color +\
+            "\nCurrent resources:\n"
+        return s
