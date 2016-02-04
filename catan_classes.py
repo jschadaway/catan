@@ -6,7 +6,7 @@
 # William Ieong
 
 class Player:
-    def __init__(self, name, color):
+    def __init__(self, name="" , color=""):
         self.name = name
         if str.lower(color) in\
            ["black", "white", "orange", "blue", "red"]:

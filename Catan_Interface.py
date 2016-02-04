@@ -7,10 +7,11 @@
 
 import catan_classes as cc
 
-num_Players = int(input("How many players are playing the game? "))
-player_list = [cc.Player() for i in range(num_Players)]
 
-def run(): 
+
+def run():
+    num_Players = int(input("How many players are playing the game? "))
+    player_list = [cc.Player() for i in range(num_Players)]
     for i in range(num_Players):
         player_name = input("What is the name of Player " + str(i) + "? ")
         player_color = input("What color is Player " + str(i) + "? ")
@@ -27,8 +28,7 @@ def print_p_options():
     return s
 
 def print_r_options():
-    s = "\n(*)Add a new player"
-    s += "\n(0)Bricks"
+    s = "\n(0)Bricks"
     s += "\n(1) Ore"
     s += "\n(2) Sheep"
     s += "\n(3) Wheat"
