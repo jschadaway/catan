@@ -50,11 +50,10 @@ def run():
 
             #Do we want this to display all resources or just for one player?
             s = ""
-            print(num_Players[1].name)
             for i in range(num_Players):
-                s += num_Players[i].name + "\n" + \
-                     + num_Players[i].resources + "\n"
-            print(s)
+               print(player_list[i].name)
+               print(player_list[i].resources)
+               print()
 
         elif action == 2:
             print("Game over, thank you for using the Catan Companion App")
