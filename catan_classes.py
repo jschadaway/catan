@@ -5,6 +5,8 @@
 # Jake Dharmasiri
 # William Ieong
 
+debug = True
+
 class Player:
     def __init__(self, name="" , color=""):
         self.name = name
@@ -39,3 +41,5 @@ class Player:
 
     def subtract_resource(self, resource):
         self.resources[resource] -= 1
+
+
